@@ -53,14 +53,14 @@ fs.readFile('./www./index.html', 'utf8', (err, data) => {
     }
 
     console.log(data);
-})
+});
 
 const server = http.createServer((req, res) => {
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/html');
     res.end('<h1>./www./index.html/</h1>');
-})
+});
 
 server.listen(port, () => {
     console.log(`Server listening on port ${port}`)
-  })
+  });
